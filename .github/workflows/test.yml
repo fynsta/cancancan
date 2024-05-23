@@ -81,10 +81,10 @@ jobs:
           bundler-cache: true
 
       - name: Run tests on sqlite
-        run: DB=sqlite bundle exec rake
+        run: DB=sqlite bundle exec rspec
 
       - name: Run tests on postgres
-        run: DB=postgres bundle exec rake
+        run: DB=postgres bundle exec rspec
 
   lint:
     name: Lint
